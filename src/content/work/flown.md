@@ -1,6 +1,6 @@
 ---
 title: FLOWN
-publishDate: 2023-08-18 00:00:00
+publishDate: 2023-08-19 00:00:00
 img: /assets/stock-1.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |

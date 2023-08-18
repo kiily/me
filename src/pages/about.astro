@@ -13,8 +13,8 @@ import Hero from '../components/Hero.astro';
 		<main class="wrapper about">
 			<Hero title="こんにちは 👋" tagline="">
 				<img
-					width="1553"
-					height="873"
+					width="715"
+					height="715"
 					src="/assets/at-work.png"
 					alt="Jeanine White at work with a colleague"
 				/>
@@ -45,7 +45,7 @@ import Hero from '../components/Hero.astro';
 				</div>
 			</section>
 			<section>
-				<h2 class="section-title">Writing</h2>
+				<h2 class="section-title">Creative writing</h2>
 				<div class="content flex flex-col gap-3">
 					<p>
 						I write when I am bored or when I feel like offloading thoughts onto
@@ -59,6 +59,36 @@ import Hero from '../components/Hero.astro';
 						> and how fascinating it is. Understanding it has been the most transformative
 						experience that I have ever had.
 					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Technical writing</h2>
+				<div class="content flex flex-col gap-3">
+					<p>
+						I have published some articles on Medium in topics related to my
+						work at FLOWN i.e. technology in our stack and productivity.
+					</p>
+					<p>Latest posts:</p>
+					<ul>
+						<li>
+							<a
+								href="https://medium.com/flown-tech-blog/%E4%B8%AD-in-the-middle-next-js-middleware-2bffb9f3dc2"
+								><strong> 中 — In the middle — Next.js middleware</strong></a
+							>
+						</li>
+						<li>
+							<a
+								href="https://medium.com/flown-tech-blog/an-adventure-with-vercel-and-datadog-eb0d0841aecb"
+								><strong>An adventure with Vercel and Datadog</strong></a
+							>
+						</li>
+						<li>
+							<a
+								href="https://kiily.medium.com/4-habits-that-keep-me-sane-and-productive-69fb4c5df9a"
+								><strong>4 habits that keep me sane and productive</strong></a
+							>
+						</li>
+					</ul>
 				</div>
 			</section>
 			<section>
@@ -122,7 +152,7 @@ import Hero from '../components/Hero.astro';
 	@media (min-width: 50em) {
 		.about {
 			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
+			grid-template-columns: 1.5fr 60% 1fr;
 		}
 
 		.about > :global(:first-child) {
