@@ -1,17 +1,19 @@
 ---
-title: Markdown Mystery Tour
-publishDate: 2020-03-02 00:00:00
+title: FLOWN
+publishDate: 2023-08-18 00:00:00
 img: /assets/stock-1.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  I am the tech lead at FLOWN. We are building a platform for users to be able to work better and feel better doing it. Sort of like a Twitch for work.
 tags:
   - Design
   - Dev
   - User Testing
+  - Product
+  - Management
 ---
 
-## Level-two heading
+## FLOWN
 
 > Tell me and I forget. Teach me and I remember. Involve me and I learn.
 

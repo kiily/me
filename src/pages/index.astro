@@ -30,22 +30,20 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Hello, my name is Miguel"
+					tagline="I am a fullstack developer who is currently based in London."
 					align="start"
 				>
 					<div class="roles">
 						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
 						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
 					</div>
 				</Hero>
-
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
-					width="480"
-					height="620"
-					src="/assets/portrait.jpg"
+					alt="Mugen from samurai champloo"
+					width="400"
+					height="520"
+					src="/assets/portrait.png"
 				/>
 			</header>
 
@@ -56,7 +54,9 @@ const projects = (await getCollection('work'))
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<p>
+						Just some of the stuff I have built or worked on and that I think might be of interest to a wider audience.
+					</p>
 				</header>
 
 				<div class="gallery">
@@ -68,7 +68,7 @@ const projects = (await getCollection('work'))
 								</li>
 							))
 						}
-					</Grid>
+					</Grid>	
 				</div>
 
 				<div class="cta">
@@ -76,28 +76,6 @@ const projects = (await getCollection('work'))
 						View All
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
-				</div>
-			</section>
-
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
-					<p>
-						I have been fortunate enough to recieve praise for my work in several publications. Take
-						a look below to learn more.
-					</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
-					</Grid>
 				</div>
 			</section>
 		</main>
@@ -137,7 +115,7 @@ const projects = (await getCollection('work'))
 		.roles {
 			margin-top: 0.5rem;
 			display: flex;
-			gap: 0.5rem;
+			gap: 1rem;
 		}
 
 		.hero img {
@@ -170,7 +148,8 @@ const projects = (await getCollection('work'))
 		top: 0;
 		transform: translateY(-75%) translateX(-50%);
 		background: url('/assets/backgrounds/noise.png') top center/220px repeat,
-			var(--hero-bg) center center / var(--bg-gradient-size) no-repeat, var(--gray-999);
+			var(--hero-bg) center center / var(--bg-gradient-size) no-repeat,
+			var(--gray-999);
 		background-blend-mode: overlay, normal, normal, normal;
 		mix-blend-mode: var(--bg-blend-mode);
 		z-index: -1;
