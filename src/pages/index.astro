@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
-
+import { Image } from 'astro:assets';
+import DevcityImage from '../../public/assets/devcity.webp';
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
 
@@ -51,11 +52,9 @@ const projects = (await getCollection('work'))
 						</a>
 					</div>
 				</Hero>
-				<img
-					alt="Mugen from samurai champloo"
-					width="400"
-					height="520"
-					src="/assets/portrait.png"
+				<Image
+					alt="futuristic city view through a window. Lush green background, person working"
+					src={DevcityImage}
 				/>
 			</header>
 			<Skills />
@@ -159,7 +158,7 @@ const projects = (await getCollection('work'))
 			top: 0;
 			transform: translateY(-75%) translateX(-50%);
 			background:
-				url('/assets/backgrounds/noise.png') top center/220px repeat,
+				url('/assets/backgrounds/noise.webp') top center/220px repeat,
 				var(--hero-bg) center center / var(--bg-gradient-size) no-repeat,
 				var(--gray-999);
 			background-blend-mode: overlay, normal, normal, normal;
